@@ -83,7 +83,7 @@ The backend is powered by FastAPI and provides:
 
 6. Start the backend server:
    ```bash
-   uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8080
+   uvicorn app.main:app --reload --workers 1 --host localhost --port 8080
    ```
 
 ### Frontend Setup
@@ -134,7 +134,7 @@ MarketInsight offers two subscription tiers:
 ### Backend Deployment
 
 ```bash
-uvicorn app.main:app --workers 4 --host 0.0.0.0 --port 8080
+uvicorn app.main:app --workers 4 --host localhost --port 8080
 ```
 
 ### Frontend Deployment

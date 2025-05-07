@@ -91,7 +91,7 @@ cd backend
 2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows, use `venv\Scripts\Activate.ps1`
 ```
 
 3. Install the dependencies:
@@ -101,12 +101,14 @@ pip install -r requirements.txt
 
 4. Set up environment variables (create `.env` file as described above)
 
+### Run locally
+
 5. Run the application:
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --host localhost --port 8080
 ```
 
-The API will be available at http://localhost:8000
+The API will be available at http://localhost:8080
 
 ## API Documentation
 
